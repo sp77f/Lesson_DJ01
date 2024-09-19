@@ -121,7 +121,7 @@ celerybeat.pid
 
 # Environments
 .env
-.venv
+dj01/main/.venv
 env/
 venv/
 ENV/
