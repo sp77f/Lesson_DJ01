@@ -1,0 +1,26 @@
+{% extends 'main/layout.html' %}
+{% block title %}Главная Cat Django{% endblock %}
+{% block content %}
+
+<div class="container mt-5">
+    <h1 class="text-center">Добро пожаловать в мир Django!</h1>
+
+    <div class="mt-4">
+        <h2>Содержимое:</h2>
+        <ul>
+            <li><strong>Введение в Django:</strong> краткое описание фреймворка.</li>
+            <li><strong>Преимущества использования Django.</strong></li>
+        </ul>
+    </div>
+
+    <div class="mt-4">
+        <p>
+            Django — это высокоуровневый веб-фреймворк на Python, который позволяет создавать надежные и масштабируемые веб-приложения. Он предлагает множество встроенных функций, что позволяет разработчикам сосредоточиться на реализации бизнес-логики.
+        </p>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="/test" class="btn btn-primary btn-lg">Начать изучение</a>
+    </div>
+</div>
+{% endblock %}

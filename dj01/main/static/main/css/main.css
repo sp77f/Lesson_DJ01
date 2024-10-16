@@ -1,0 +1,29 @@
+        aside {
+            background-color: #f8f9fa;
+            padding: 20px;
+            height: 100vh;
+        }
+        aside img {
+            max-width: 100%;
+            height: auto;
+        }
+        aside span {
+            font-size: 24px;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+        aside ul li {
+            margin: 10px 0;
+        }
+        aside ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
