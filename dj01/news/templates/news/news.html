@@ -3,15 +3,19 @@
 {% block content %}
 <div class="container mt-5">
     <h1 class="mb-4">Новости</h1>
-    {% for news in news %}
-    <div class="card mb-4">
-        <div class="card-body">
-            <h2 class="card-title">{{ news.title }}</h2>
-            <p class="card-text">{{ news.short_description }}</p>
-            <p class="card-text">{{ news.content }}</p>
-            <p class="card-text text-muted"><small>Опубликовано: {{ news.created_at }}</small></p>
-            <p class="card-text"><small>Автор: {{ news.author }}</small></p>
+   {% if news %}
+        {% for news in news %}
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">{{ news.title }}</h2>
+                <p class="card-text">{{ news.short_description }}</p>
+                <p class="card-text">{{ news.content }}</p>
+                <p class="card-text text-muted"><small>Опубликовано: {{ news.created_at }}</small></p>
+                <p class="card-text"><small>Автор: {{ news.author }}</small></p>
+            </div>
         </div>
-    </div>
-{% endfor %}
+        {% endfor %}
+    {% else %}
+        <p>Новостей пока нет</p>
+    {% endif %}
 {% endblock %}
